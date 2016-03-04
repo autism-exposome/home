@@ -42,6 +42,18 @@ header.carousel .fill {
     background-size: cover;
 }
 
+/* About page styles*/
+/*.about-img{
+    position: relative;
+    float: left;
+    width:  200px;
+    height: 80px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+} */
+
+
 /* 404 Page Styles */
 
 .error-404 {
