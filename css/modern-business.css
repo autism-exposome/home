@@ -42,6 +42,62 @@ header.carousel .fill {
     background-size: cover;
 }
 
+/*Index page*/
+/*Nav bar background colors*/
+nav.navbar.navbar-inverse.navbar-fixed-top {
+    background-color: #6f9c32;
+    border-color: #327b9c;
+}
+
+/* mouse highlight colors*/
+.nav.navbar-nav.navbar-right li a:hover,
+.nav.navbar-nav.navbar-right li a:focus
+{
+    background-color: #327b9c;
+}
+
+.dropdown-menu{
+    background-color: #6f9c32;   
+}
+.dropdown-menu  li  a:hover,
+.dropdown-menu  li  a:focus{
+  background-color: #327b9c;
+}
+
+/*this is the color of texts from right side */
+#bs-example-navbar-collapse-1 ul li a{
+    color: #fafff3;
+}
+
+
+/* About page styles*/
+/*.about-img{
+    position: relative;
+    float: left;
+    width:  200px;
+    height: 80px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+} */
+
+/*Overview page*/
+figure.overview-aim{
+    display: inline-block;
+    
+    margin: 20px; /* adjust as needed */
+}
+figure img.img-overview-aim {
+    vertical-align: center;
+    height: 400px;
+
+}
+figure figcaption.cap-overview-aim {
+    
+    text-align: center;
+}
+
+
 /* 404 Page Styles */
 
 .error-404 {
