@@ -49,12 +49,15 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
     border-color: #327b9c;
 }
 
-.dropdown-menu{
-    background-color: #6f9c32;   
+/* mouse highlight colors*/
+.nav.navbar-nav.navbar-right li a:hover,
+.nav.navbar-nav.navbar-right li a:focus
+{
+    background-color: #327b9c;
 }
 
-.dropdown-menu  li  a{
-  color: #fafff3;
+.dropdown-menu{
+    background-color: #6f9c32;   
 }
 .dropdown-menu  li  a:hover,
 .dropdown-menu  li  a:focus{
@@ -65,9 +68,7 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 #bs-example-navbar-collapse-1 ul li a{
     color: #fafff3;
 }
-.navbar-brand a{
-    color: #fafff3;
-}
+
 
 /* About page styles*/
 /*.about-img{
