@@ -128,9 +128,15 @@
                 <h3>Pubmed search results by year </h3>
 
                <!-- <img src="img/keywords.jpeg"> -->
-
-               <iframe src="https://autismexposome.shinyapps.io/pubmedTrack/" style="border: none; width: 900px; height: 500px" ></iframe> 
-
+               <div class="frame_holder">
+                    <iframe class="my_frame" src="https://autismexposome.shinyapps.io/pubmedTrack/" style="border: none;width: 900px; height: 500px">
+                
+                    </iframe>
+                </div>
+                <script type="text/javascript" language="javascript"> 
+                $('.myIframe').css('height', $(window).height()+'px');
+                </script>
+              
                 <hr>
 
                 <h3><a name="Exposure">Exposure</a></h3>
