@@ -9,6 +9,7 @@
 html,
 body {
     height: 100%;
+    font-size: 105%;
 }
 
 body {
@@ -57,7 +58,8 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 }
 
 .dropdown-menu{
-    background-color: #6f9c32;   
+    background-color: #6f9c32;  
+     font-size: 95%; 
 }
 .dropdown-menu  li  a:hover,
 .dropdown-menu  li  a:focus{
@@ -67,6 +69,7 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 /*this is the color of texts from right side */
 #bs-example-navbar-collapse-1 ul li a{
     color: #fafff3;
+     font-size: 105%;
 }
 
 
