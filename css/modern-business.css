@@ -9,6 +9,7 @@
 html,
 body {
     height: 100%;
+    font-size: 105%;
 }
 
 body {
@@ -44,9 +45,16 @@ header.carousel .fill {
 
 /*Index page*/
 /*Nav bar background colors*/
+
 nav.navbar.navbar-inverse.navbar-fixed-top {
     background-color: #6f9c32;
     border-color: #327b9c;
+}
+
+/*This is brand setting*/
+.navbar.navbar-inverse.navbar-fixed-top a{
+     color: #FFFFFF;
+      font-size: 105%;
 }
 
 /* mouse highlight colors*/
@@ -57,16 +65,24 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 }
 
 .dropdown-menu{
-    background-color: #6f9c32;   
+    background-color: #6f9c32;  
+     font-size: 95%; 
 }
 .dropdown-menu  li  a:hover,
-.dropdown-menu  li  a:focus{
+.dropdown-menu  li  a:focus,
+.dropdown-menu  li  a:visited{
   background-color: #327b9c;
 }
+
+.dropdown  .active{
+  background-color: #327b9c;
+}
+
 
 /*this is the color of texts from right side */
 #bs-example-navbar-collapse-1 ul li a{
     color: #fafff3;
+     font-size: 105%;
 }
 
 
@@ -98,30 +114,6 @@ figure figcaption.cap-overview-aim {
 }
 
 
-/* 404 Page Styles */
-
-.error-404 {
-    font-size: 100px;
-}
-
-/* Pricing Page Styles */
-
-.price {
-    display: block;
-    font-size: 50px;
-    line-height: 50px;
-}
-
-.price sup {
-    top: -20px;
-    left: 2px;
-    font-size: 20px;
-}
-
-.period {
-    display: block;
-    font-style: italic;
-}
 
 /* Footer Styles */
 
