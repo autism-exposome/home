@@ -85,12 +85,7 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
      font-size: 105%;
 }
 
-/*Index page div setting*/
-#index-page-right{
-    width: 
-}
-
-/*right side bar*/
+/*Index page right side bar*/
 .well{
     border-style:none;
     background-color: #FFFFFF;
@@ -111,16 +106,15 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 
 /*Index page dynamic scroller*/
 .well #pscroller1{
-border:initial;
-width: 100%;
-background-color: #FFFFFF;
-height: 200px;
+    border:initial;
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 200px;
 }
 
 /*Overview page*/
 figure.overview-aim{
     display: inline-block;
-    
     margin: 20px; /* adjust as needed */
 }
 figure img.img-overview-aim {
