@@ -127,7 +127,10 @@ figure figcaption.cap-overview-aim {
     text-align: center;
 }
 
-
+/*About page */
+.thumbnail .caption {
+  text-overflow: auto;
+}
 
 /* Footer Styles */
 
