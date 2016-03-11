@@ -85,17 +85,37 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
      font-size: 105%;
 }
 
+/*Index page div setting*/
+#index-page-right{
+    width: 
+}
 
-/* About page styles*/
-/*.about-img{
-    position: relative;
-    float: left;
-    width:  200px;
-    height: 80px;
-    background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
-} */
+/*right side bar*/
+.well{
+    border-style:none;
+    background-color: #FFFFFF;
+
+}
+
+.well h4{
+    background-color: #6f9c32; 
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 1.9;
+
+}
+.well h4 a{
+    color: #FFFFFF;
+}
+
+
+/*Index page dynamic scroller*/
+.well #pscroller1{
+border:initial;
+width: 100%;
+background-color: #FFFFFF;
+height: 200px;
+}
 
 /*Overview page*/
 figure.overview-aim{
