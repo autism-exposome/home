@@ -129,7 +129,10 @@ figure figcaption.cap-overview-aim {
 
 /*About page */
 .thumbnail .caption {
-  text-overflow: auto;
+    white-space: nowrap;
+    /* width: 16em; */
+    text-overflow: auto;
+    overflow: hidden;
 }
 
 /* Footer Styles */
