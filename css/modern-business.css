@@ -48,13 +48,13 @@ header.carousel .fill {
 
 nav.navbar.navbar-inverse.navbar-fixed-top {
     background-color: #6f9c32;
-    border-color: #327b9c;
+    border-color: #6f9c32;
 }
 
 /*This is brand setting*/
 .navbar.navbar-inverse.navbar-fixed-top a{
-     color: #FFFFFF;
-      font-size: 105%;
+    color: #FFFFFF;
+    font-size: 105%;
 }
 
 /* mouse highlight colors*/
@@ -107,7 +107,7 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 /*Index page dynamic scroller*/
 .well #pscroller1{
     border:initial;
-    width: 100%;
+    width: 85%;
     background-color: #FFFFFF;
     height: 200px;
 }
