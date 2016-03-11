@@ -133,6 +133,7 @@ figure figcaption.cap-overview-aim {
     /* width: 16em; */
     text-overflow: auto;
     overflow: hidden;
+    word-wrap: break-word;
 }
 
 /* Footer Styles */
