@@ -45,28 +45,27 @@ header.carousel .fill {
 
 /*Index page*/
 /*Nav bar background colors*/
-
-nav.navbar.navbar-inverse.navbar-fixed-top {
-    background-color: #6f9c32;
+ .navbar.navbar-inverse.navbar-fixed-top {
+    background-color: #6f9c32; /*green*/
     border-color: #6f9c32;
 }
 
 /*This is brand setting*/
 .navbar.navbar-inverse.navbar-fixed-top a{
     color: #FFFFFF;
-    font-size: 105%;
+    font-size: 110%;
 }
 
 /* mouse highlight colors*/
 .nav.navbar-nav.navbar-right li a:hover,
-.nav.navbar-nav.navbar-right li a:focus
+.nav.navbar-nav.navbar-right li a:visited
 {
-    background-color: #327b9c;
+    background-color: #327b9c; /*blue*/
 }
 
 .dropdown-menu{
     background-color: #6f9c32;  
-     font-size: 95%; 
+    font-size: 100%; 
 }
 .dropdown-menu  li  a:hover,
 .dropdown-menu  li  a:focus,
@@ -74,16 +73,15 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
   background-color: #327b9c;
 }
 
-.dropdown  .active{
-  background-color: #327b9c;
-}
 
 
 /*this is the color of texts from right side */
 #bs-example-navbar-collapse-1 ul li a{
     color: #fafff3;
      font-size: 105%;
-}
+} 
+
+
 
 /*Index page right side bar*/
 .well{
@@ -127,14 +125,7 @@ figure figcaption.cap-overview-aim {
     text-align: center;
 }
 
-/*About page */
-.thumbnail .caption {
-    white-space: nowrap;
-    /* width: 16em; */
-    text-overflow: auto;
-    overflow: hidden;
-    word-wrap: break-word;
-}
+
 
 /* Footer Styles */
 
