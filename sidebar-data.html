@@ -27,6 +27,40 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+        <!-- this is to plot the pie chart (source is from goolge developmers-->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load("current", {packages:["corechart"]});
+          google.charts.setOnLoadCallback(drawChart);
+          function drawChart() {
+             var dataTable = new google.visualization.DataTable();
+            dataTable.addColumn('string', 'chemical Class');
+            dataTable.addColumn('number', 'Number of Compounds Analyzed');
+            // A column for custom tooltip content
+            dataTable.addColumn({type: 'string', role: 'tooltip'});
+            dataTable.addRows([
+              ['Brominated Flame Retardants',     40, 'e.g.: Polybrominated diphenyl ethers, pentabromoethylbenzene'],
+              ['Chlorinated and Chlorinated Phosphate Ester Flame Retardants',      20, 'e.g.: Polychlorinated biphenyls, dechlorane plus, TCEP, TCPP'],
+              ['Organochlorine Pesticides',  20,'e.g.: Heptachlor, Aldrin, Endrin, DDT'],
+              ['Pesticide Breakdown Products', 5,'e.g.: DDE, heptachlor epoxide'],
+              ['Polycylic Aromatic Hydrocarbons',    15, 'e.g.: Naphthalene, benzo[a]pyrene']
+            ]);
+
+            var options = {
+                title: 'Chemical species in GC-MS/MS analysis',
+                legend: 'none'
+            };
+
+            //var options = { legend: 'none' };
+            //var chart = new google.visualization.ColumnChart(document.getElementById('tooltip_action'));
+             var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+             chart.draw(dataTable, options);
+
+            //var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+            //chart.draw(data, options);
+          }
+        </script>
+
 </head>
 
 <body>
@@ -124,7 +158,8 @@
             <div class="col-md-9">
                 <h2 name="Data">Data</h2>
                 <hr>
-
+                <!--Div that will hold the chart-->
+                <div id="piechart" style="width: 900px; height: 500px;"></div>
             </div>
             
 
@@ -135,7 +170,7 @@
                         <h4><i class="fa fa-fw fa-compass"></i>Data source 1</h4>
                     </div>
                     <div class="panel-body">
-                        <p>TBA</p>
+                        <p>coming soon</p>
                         <a href="#" class="btn btn-default">Download</a>
                     </div>
                 </div>
@@ -146,7 +181,18 @@
                         <h4><i class="fa fa-fw fa-compass"></i> Data source 2</h4>
                     </div>
                     <div class="panel-body">
-                        <p>TBA</p>
+                        <p>coming soon</p>
+                        <a href="#" class="btn btn-default">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-compass"></i> Data source 3</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>coming soon</p>
                         <a href="#" class="btn btn-default">Download</a>
                     </div>
                 </div>
