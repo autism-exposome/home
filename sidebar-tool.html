@@ -122,11 +122,28 @@
             <div class="col-md-9">
                 <h2 name="Tools">Tools</h2>
                 <hr>
+              
                 <p><strong>apLCMS, LC-MS metabolomics feature extraction</strong></p> 
-                <p>The apLCMS is a preprocessing software, which can process large LC/MS data. The algorithms are implemented in an R package apLCMS <a href="">More about the tool</a> </p><br>
+                <p>The apLCMS is used for preprocessing LC-MS data. The major improvements include the following aspects: the adaptive tolerance level searching, to apply non-parametric methods of fine-tune intensity grouping, to better preserve weak signals and the estimation method on peak intensitites for absolute quantification. The algorithms are implemented in an R package apLCMS. </p> 
+                <p><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2712336/">More about the tool</a>: Yu, T., Park, Y., Johnson, J. M., and Jones, D. P. (2009). apLCMS—adaptive processing of high-resolution LC/MS data. Bioinformatics, 25(15), 1930-1936. </p> <br>
 
-                <strong>xMSanalyzer</strong></p> 
-                <p>The apLCMS is a preprocessing software, which can process large LC/MS data. The algorithms are implemented in an R package apLCMS <a href="">More about the tool</a> </p><br>
+                <p><strong>xMSanalyzer</strong></p> 
+                <p>xMSanalyzer is an automated pipeline for processing of metabolomics data which intergrates with packages apLCMS and XCMS, but it could be also used to improve the data extraction steps performed by other software.  It includes the following functions: data extraction, quality control assessment, detection of overlapping and unique metabolites in multiple datases as well as batch annotation of metabolites. </p> 
+
+                    <img  src="img/xMSworkflow.jpg" align="middle"></img>
+                    <p align=center> Fig. xMSanalyzer workflow <cite>(Taken from Uppal et al. 2013)</cite></p>
+
+                <p><a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-15">More about the tool</a>: Uppal, K., Soltow, Q. A., Strobel, F. H., Pittard, W. S., Gernert, K. M., Yu, T., &emp Jones, D. P. (2013). xMSanalyzer: automated pipeline for improved feature detection and downstream analysis of large-scale, non-targeted metabolomics data. BMC bioinformatics, 14(1), 15.</p><br>
+
+                <p><strong>Mummichog</strong></p> 
+                <p>Mummichog is a method to post-process high-throughput metabolomics data, namely, metabolite identification . This software features a biological activity prediction method which is directly from mass spectrometry data without priori identification of metabolites. Both gene expression and metabolite identification confirmed the predicted results.</p> 
+                                
+                    <img  src="img/mummichogWorkflowComp.jpeg" align="middle"></img>
+                    <p align=center> Fig. Workflow comparison between conventional methods VS Mummichog <cite>(Taken from Li et al. 2013)</cite></p>
+                   
+              
+                <p><a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003123">More about the tool</a>: Li, S., Park, Y., Duraisingham, S., Strobel, F. H., Khan, N., Soltow, Q. A., ... &emp Pulendran, B. (2013). Predicting network activity from high throughput metabolomics. PLoS computational biology, 9(7), e1003123.</p><br>
+
 
             </div>
         </div>
