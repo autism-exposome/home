@@ -1,0 +1,60 @@
+library(shiny)
+library(ggplot2)
+
+shinyServer(function(input, output) {
+
+  dataset <- reactive({
+    diamonds[sample(nrow(diamonds), input$variable),]
+  })
+
+  output$plot <- renderPlot({
+    
+    p <- ggplot(dataset(), aes_string(x=input$x, y=input$y)) + geom_point()
+    
+    if (input$color != 'None')
+      p <- p + aes_string(color=input$color)
+    
+    facets <- paste(input$facet_row, '~', input$facet_col)
+    if (facets != '. ~ .')
+      p <- p + facet_grid(facets)
+    
+    if (input$jitter)
+      p <- p + geom_jitter()
+    if (input$smooth)
+      p <- p + geom_smooth()
+    
+    print(p)
+    
+  }, height=700)
+  
+})
+
+
+var data = google.visualization.arrayToDataTable([
+          ['Chemical Class', 'Number of Compounds Analyzed'],
+          ['Brominated Flame Retardants',     40],
+          ['Chlorinated and Chlorinated Phosphate Ester Flame Retardants',      20],
+          ['Organochlorine Pesticides',  20],
+          ['Pesticide Breakdown Products', 5],
+          ['Polycylic Aromatic Hydrocarbons',    15]
+        ]);
+
+        // var options = {
+           //   title: 'Chemical species selected for GC-MS/MS analysis',
+            //  is3D: true,
+
+
+            
+                    <div class="col-md-4 img-portfolio">
+                        <img class="img-responsive customer-img" src="img/indexGeneEnv.jpg" alt="">
+                    </div>
+                    <ul>
+                        <li>Genetic factors</li>
+                        <p>Genetic factors have been considered to play a significant role in susceptibility to ASD. However, large-scale screens for rare de novo mutations and copy number variations found that such variants explain less than 10% of ASD cases, cumulatively. Recently, twin studies revisited the heritability of the disease (the proportion of variability of disease attributed to genetic factors) and recognized that shared environmental factors can explain a larger proportion of the variance in liability (41~52%) relative to heritability (38~49%). </p>
+                        <li>Environmental risk factors</li>
+                        <p>Previous studies have identified possible exposure to individual or mixtures of environmental toxicants during different life preriods, such as: the comprehensively and systematically sesarch and identification of  environmental exposures in ASD have not kept pace.</p>
+                    </ul>
+                    
+                    <br>
+                     <br>
+                </div>
