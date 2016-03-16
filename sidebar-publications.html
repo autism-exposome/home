@@ -27,6 +27,31 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- publication chart-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Autism', 'Autism & Genetic', 'Autism & (Exposome +Environment)'],
+          ['2013',  1000,      400],
+          ['2014',  1170,      460],
+          ['2015',  660,       1120],
+          ['2016',  1030,      540]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+
 </head>
 
 <body>
@@ -59,7 +84,7 @@
                                 <a href="sidebar-overview.html">Overview</a>
                             </li>
                             <li>
-                                <a href="sidebar-approaches.html">Approaches</a>
+                                <a href="sidebar-approaches-LC.html">Approaches</a>
                             </li>
                         </ul>
                     </li>
@@ -111,10 +136,10 @@
              <div class="col-md-3">
                 <div class="list-group">
                 <a href="sidebar-publications.html" class="list-group-item"><strong>Publications</strong></a>
-                 <a href="sidebar-publications.html#Exposure" class="list-group-item"><i class="fa fa-fw fa-check"></i> Exposure</a>
-                <a href="sidebar-publications.html#Exposomes" class="list-group-item"><i class="fa fa-fw fa-check"></i> Exposomes</a>
-                <a href="sidebar-publications.html#AE" class="list-group-item"><i class="fa fa-fw fa-check"></i> Autism  &amp; Environment</a>
-                <a href="sidebar-publications.html#MS" class="list-group-item"><i class="fa fa-fw fa-check"></i> Mass Spectrometry</a>
+                 <a href="sidebar-publications.html#Exposure" class="list-group-item">&bull; Exposure</a>
+                <a href="sidebar-publications.html#Exposomes" class="list-group-item">&bull; Exposomes</a>
+                <a href="sidebar-publications.html#AE" class="list-group-item">&bull; Autism  &amp; Environment</a>
+                <a href="sidebar-publications.html#MS" class="list-group-item">&bull; Mass Spectrometry</a>
                 <a href="sidebar-data.html#Data" class="list-group-item"><strong>Data</strong></a>
                 <a href="sidebar-tool.html#Tools" class="list-group-item"><strong>Tools</strong></a>
                 <a href="sidebar-link.html#Links" class="list-group-item"><strong>Important Links</strong></a>
@@ -125,14 +150,24 @@
             <div class="col-md-9">
                 <h2>Publications</h2>
                 <hr>
-                    <!-- <img src="img/keywords.jpeg"> -->
-                    <iframe class="my_frame" src="https://autismexposome.shinyapps.io/pubmedTrack/" frameborder="0" width="100%" style="height: 60vh;">
-                    </iframe>
+
+                <p>Coming soon.</p>
+                <br>
+                <br>
+                <br>
+
+                <h2>Selected references</h2>
+                <hr>
+                    <h4>Publication summary from pubmed</h4>
+                    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+                 <!-- <img src="img/keywords.jpeg"> -->
+                    <!--    <iframe class="my_frame" src="https://autismexposome.shinyapps.io/pubmedTrack/" frameborder="0" width="100%" style="height: 60vh;">
+                    </iframe> -->
                
                     <!-- this is to adjust iframe display in different devices-->
-                    <script type="text/javascript" language="javascript"> 
+                    <!--<script type="text/javascript" language="javascript"> 
                     $('.myIframe').css('height', $(window).height()+'px');
-                    </script>
+                    </script> -->
                   
                 <hr>
 
