@@ -105,9 +105,9 @@ header.carousel .fill {
 /*Index page dynamic scroller*/
 .well #pscroller1{
     border:initial;
-    width: 85%;
+    width: 90%;
     background-color: #FFFFFF;
-    height: 200px;
+    height: 100px;
 }
 
 /*Overview page*/
