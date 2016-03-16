@@ -45,28 +45,27 @@ header.carousel .fill {
 
 /*Index page*/
 /*Nav bar background colors*/
-
-nav.navbar.navbar-inverse.navbar-fixed-top {
-    background-color: #6f9c32;
-    border-color: #327b9c;
+ .navbar.navbar-inverse.navbar-fixed-top {
+    background-color: #6f9c32; /*green*/
+    border-color: #6f9c32;
 }
 
 /*This is brand setting*/
 .navbar.navbar-inverse.navbar-fixed-top a{
-     color: #FFFFFF;
-      font-size: 105%;
+    color: #FFFFFF;
+    font-size: 110%;
 }
 
 /* mouse highlight colors*/
 .nav.navbar-nav.navbar-right li a:hover,
-.nav.navbar-nav.navbar-right li a:focus
+.nav.navbar-nav.navbar-right li a:visited
 {
-    background-color: #327b9c;
+    background-color: #327b9c; /*blue*/
 }
 
 .dropdown-menu{
     background-color: #6f9c32;  
-     font-size: 95%; 
+    font-size: 100%; 
 }
 .dropdown-menu  li  a:hover,
 .dropdown-menu  li  a:focus,
@@ -74,33 +73,46 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
   background-color: #327b9c;
 }
 
-.dropdown  .active{
-  background-color: #327b9c;
-}
 
 
 /*this is the color of texts from right side */
 #bs-example-navbar-collapse-1 ul li a{
     color: #fafff3;
      font-size: 105%;
+} 
+
+
+
+/*Index page right side bar*/
+.well{
+    border-style:none;
+    background-color: #FFFFFF;
+
+}
+
+.well h4{
+    background-color: #6f9c32; 
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 1.9;
+
+}
+.well h4 a{
+    color: #FFFFFF;
 }
 
 
-/* About page styles*/
-/*.about-img{
-    position: relative;
-    float: left;
-    width:  200px;
-    height: 80px;
-    background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
-} */
+/*Index page dynamic scroller*/
+.well #pscroller1{
+    border:initial;
+    width: 90%;
+    background-color: #FFFFFF;
+    height: 100px;
+}
 
 /*Overview page*/
 figure.overview-aim{
     display: inline-block;
-    
     margin: 20px; /* adjust as needed */
 }
 figure img.img-overview-aim {
@@ -113,6 +125,39 @@ figure figcaption.cap-overview-aim {
     text-align: center;
 }
 
+/*Index page with five logos*/
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
 
 
 /* Footer Styles */

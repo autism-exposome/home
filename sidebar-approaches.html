@@ -31,8 +31,7 @@
 
 <body>
 
- 
-         <!-- Navigation -->
+          <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -49,11 +48,11 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="about.html">About Us</a>
+                        <a href="about.html">About us</a>
                     </li>
               
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project<b class="caret"></b></a>
+                        <a href="sidebar-overview.html" class="dropdown-toggle" data-toggle="dropdown">Project<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="sidebar-overview.html">Overview</a>
@@ -64,7 +63,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                        <a href="sidebar-publications.html" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="sidebar-publications.html">Publications</a>
@@ -92,7 +91,6 @@
         </div>
         <!-- /.container -->
     </nav>
-    
 
     <!-- Page Content -->
     <div class="container">
@@ -107,35 +105,54 @@
 
         <!-- Content Row -->
         <div class="row">
-            <!-- Sidebar Column -->
-            <div class="col-md-3">
+        <!-- Sidebar Column -->
+              <div class="col-md-3">
                 <div class="list-group">
                 <a href="sidebar-overview.html" class="list-group-item"><strong>Overview</strong></a>
-<<<<<<< HEAD
-                <a href="sidebar-overview.html#backgrounds" class="list-group-item"><i class="fa fa-fw fa-check"></i> Background</a>
-=======
-                <a href="sidebar-overview.html#background" class="list-group-item"><i class="fa fa-fw fa-check"></i> Background</a>
->>>>>>> gh-pages
-                <a href="sidebar-overview.html#aims" class="list-group-item"><i class="fa fa-fw fa-check"></i> Aim</a>
-                <a href="sidebar-approaches.html" class="list-group-item"><strong>Approaches</strong></a>
-                <a href="sidebar-approaches.html#LC" class="list-group-item"><i class="fa fa-fw fa-check"></i> LC-HRMS</a>
-                <a href="sidebar-approaches.html#GC" class="list-group-item"><i class="fa fa-fw fa-check"></i> GC-MS</a>
-                <a href="sidebar-approaches.html#EWAS" class="list-group-item"><i class="fa fa-fw fa-check"></i> EWAS</a>
+
+                <a href="sidebar-overview.html#backgrounds" class="list-group-item">&bull; Background</a>
+
+                <a href="sidebar-overview.html#aims" class="list-group-item">&bull; Our goals</a>
+                <a href="sidebar-approaches-LC.html" class="list-group-item"><strong>Approaches</strong></a>
+                <a href="sidebar-approaches-LC.html" class="list-group-item">&bull; LC-HRMS</a>
+                <a href="sidebar-approaches-GC.html" class="list-group-item">&bull; GC-MS</a>
+                <a href="sidebar-approaches-EWAS.html" class="list-group-item">&bull; EWAS</a>
                 </div>
             </div>
+
             <!-- Content Column -->
             <div class="col-md-9">
                 <h2>Approaches</h2>
                 <hr>
                 <h3><a name="LC">LC-HRMS</a></h3>
-                <p>Something</p>
+                <p>Liquid chromatography-high resolution mass spectrometry (LC-HRMS) is a technique which liquid chromatography coupled to mass spectrometry with improvements in the MS systems. It enables the determination of a broad range of chemicals from environment, drug <i>etc</i>. <a href="http://clinicalmetabolomics.org/"> Read more </a> </p>
                 <br>
+              
                 <h3><a name="GC">GC-MS</a></h3>
-                <br>
-                <p>something</p>
+                <p>Gas chromatography and mass spectrometry (GC-MS) is an analysis technique which allows for measurement of a mixture of chemicals at very low concentrations. The analysis is conducted in two steps: separation and detection.  GC-MS is used for many applications, including illegal drug screening, doping analysis in sports, detection of pesticides in foods, and detection of explosive compounds for airport security. <i>from Caitilin</i></p>
+                <div class="col-md-5">
+                    <img class="img-responsive" src="img/gcms.jpg" alt="">
+                </div>
+
+                <div class="col-md-5">
+                    <img class="img-responsive" src="img/gcmsDoor.jpg" alt="">
+                </div>
+            </div>
+            <!-- this is to make sure side bar space is taken-->
+            <div class="col-md-3">
+            </div>
+             <div class="col-md-9">
+                <p>A GC-MS/MS instrument (left), and (right) the same instrument with the oven door open to show the column, which is 60 meters long and has an inner diameter of 0.25 millimeters. The gas chromatograph is located in the right half of the instrument, and the mass spectrometer is the left half of the instrument.</p>
+
+            </div>
+            <!-- this is to make sure side bar space is taken-->
+            <div class="col-md-3">
+            </div>
+
+            <div class="col-md-9">
                 <h3><a name="EWAS">EWAS</a></h3>
                 <br>
-                <p>something</p>
+                <p>Environment-wide association studies (EWAS) is an analytic approach, similar to Genome-wide association studies, which is to identify the assoociation between exposures and disease/disease related traits. Mutiple exposures without considering interations are assessed simutaneously by EWAS. <i>Patel et al. JAMA, 2014</i></p>
             </div>
         </div>
         <!-- /.row -->
@@ -146,7 +163,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Autism Exposome Project 2016</p>
+                    <p>Copyright &copy; Boston Children's Hospital 2015 </p>
                     <p>Follow us: <a href="https://twitter.com/AutismExposome" class="twitter-follow-button" data-show-count="false">Follow @AutismExposome</a>
                      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
                      </p>

@@ -27,12 +27,46 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+        <!-- this is to plot the pie chart (source is from goolge developmers-->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load("current", {packages:["corechart"]});
+          google.charts.setOnLoadCallback(drawChart);
+          function drawChart() {
+             var dataTable = new google.visualization.DataTable();
+            dataTable.addColumn('string', 'chemical Class');
+            dataTable.addColumn('number', 'Number of Compounds Analyzed');
+            // A column for custom tooltip content
+            dataTable.addColumn({type: 'string', role: 'tooltip'});
+            dataTable.addRows([
+              ['Brominated Flame Retardants',     40, 'e.g.: Polybrominated diphenyl ethers, pentabromoethylbenzene'],
+              ['Chlorinated and Chlorinated Phosphate Ester Flame Retardants',      20, 'e.g.: Polychlorinated biphenyls, dechlorane plus, TCEP, TCPP'],
+              ['Organochlorine Pesticides',  20,'e.g.: Heptachlor, Aldrin, Endrin, DDT'],
+              ['Pesticide Breakdown Products', 5,'e.g.: DDE, heptachlor epoxide'],
+              ['Polycylic Aromatic Hydrocarbons',    15, 'e.g.: Naphthalene, benzo[a]pyrene']
+            ]);
+
+            var options = {
+                title: 'Chemical species in GC-MS/MS analysis (N = 100)',
+                legend: 'none'
+            };
+
+            //var options = { legend: 'none' };
+            //var chart = new google.visualization.ColumnChart(document.getElementById('tooltip_action'));
+             var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+             chart.draw(dataTable, options);
+
+            //var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+            //chart.draw(data, options);
+          }
+        </script>
+
 </head>
 
 <body>
 
  
-         <!-- Navigation -->
+            <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -49,22 +83,22 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="about.html">About Us</a>
+                        <a href="about.html">About us</a>
                     </li>
               
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project<b class="caret"></b></a>
+                        <a href="sidebar-overview.html" class="dropdown-toggle" data-toggle="dropdown">Project<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="sidebar-overview.html">Overview</a>
                             </li>
                             <li>
-                                <a href="sidebar-approaches.html">Approaches</a>
+                                <a href="sidebar-approaches-LC.html">Approaches</a>
                             </li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                        <a href="sidebar-publications.html" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="sidebar-publications.html">Publications</a>
@@ -122,9 +156,10 @@
             </div>
 
             <div class="col-md-9">
-                <h2>Data</h2>
+                <h2 name="Data">Data</h2>
                 <hr>
-
+                <!--Div that will hold the chart-->
+                <div id="piechart" style="width: 900px; height: 500px;"></div>
             </div>
             
 
@@ -135,7 +170,7 @@
                         <h4><i class="fa fa-fw fa-compass"></i>Data source 1</h4>
                     </div>
                     <div class="panel-body">
-                        <p>TBA</p>
+                        <p>coming soon</p>
                         <a href="#" class="btn btn-default">Download</a>
                     </div>
                 </div>
@@ -146,7 +181,18 @@
                         <h4><i class="fa fa-fw fa-compass"></i> Data source 2</h4>
                     </div>
                     <div class="panel-body">
-                        <p>TBA</p>
+                        <p>coming soon</p>
+                        <a href="#" class="btn btn-default">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-compass"></i> Data source 3</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>coming soon</p>
                         <a href="#" class="btn btn-default">Download</a>
                     </div>
                 </div>
@@ -160,7 +206,7 @@
        <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Autism Exposome Project 2016</p>
+                    <p>Copyright &copy; Boston Children's Hospital 2015 </p>
                     <p>Follow us: <a href="https://twitter.com/AutismExposome" class="twitter-follow-button" data-show-count="false">Follow @AutismExposome</a>
                      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
                      </p>
