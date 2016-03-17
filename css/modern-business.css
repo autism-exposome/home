@@ -42,6 +42,8 @@ header.carousel .fill {
     background-position: center;
     background-size: cover;
 }
+/*This is to remove the navigation dot/ pagination button */
+.carousel-indicators li { visibility: hidden; }
 
 /*Index page*/
 /*Nav bar background colors*/
