@@ -39,15 +39,16 @@
             // A column for custom tooltip content
             dataTable.addColumn({type: 'string', role: 'tooltip'});
             dataTable.addRows([
-              ['Brominated Flame Retardants',     40, 'e.g.: Polybrominated diphenyl ethers, pentabromoethylbenzene'],
-              ['Chlorinated and Chlorinated Phosphate Ester Flame Retardants',      20, 'e.g.: Polychlorinated biphenyls, dechlorane plus, TCEP, TCPP'],
-              ['Organochlorine Pesticides',  20,'e.g.: Heptachlor, Aldrin, Endrin, DDT'],
-              ['Pesticide Breakdown Products', 5,'e.g.: DDE, heptachlor epoxide'],
-              ['Polycylic Aromatic Hydrocarbons',    15, 'e.g.: Naphthalene, benzo[a]pyrene']
+              ['Brominated Flame Retardants, PCB, PBDE,     24, 'e.g.: Pentabromoethylbenzene, 2-Ethylhexyl 2,3,4,5-tetrabromobenzoate'],
+              ['Chlorinated Dibenzo-p-dioxins and Dibenzofurans',      11, 'e.g.: Dibenzofuran, 2,3,7,8-Tetrachlorodibenzofuran'],
+              ['Polycyclic Aromatic Hydrocarbons',  11,'e.g.: Dibenz[a,h]anthracene, Benzo[ghi]perylene'],
+              ['Organochlorine Pesticides, Insecticides, and their Breakdown Products', 28,'e.g.: Pentachloronitrobenzene, o,p'-DDT, o,p'-DDE, Endrin ketone'],
+              ['Other Pesticides and Pest, Repellents, Including Organophosphate Pesticides',    26, 'e.g.: Alachlor, Deet'],
+              ['Other Environmental Pollutants',    23, 'e.g.: Hexachlorobutadiene, 1,2,3-Trichlorobenzene']
             ]);
 
             var options = {
-                title: 'Chemical species in GC-MS/MS analysis (N = 100)',
+                title: 'Chemical species in GC-MS/MS analysis (N = 125)',
                 fontSize: 18
 
             };
@@ -168,7 +169,7 @@
                  <br>
                  <br>
                 <h4>GC-MS/MS</h4>
-                <p>We measured 31 of the original proposed chemicals, along with an additional about 70 chemicals for a total of 100 chemicals quantified.  </p>
+                <p>Currently, 83 of 153 environmental chemicals were quantitatively measured using GC-MS/MS in 67 individuals. We are planning to expand the analytes to 125. </p>
                 <div id="piechart" style="width: 900px; height: 500px;"></div>
                  <br>
               
