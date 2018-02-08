@@ -19,49 +19,6 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-        <!-- this is to plot the pie chart (source is from goolge developmers -->
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script type="text/javascript">
-          google.charts.load("current", {packages:["corechart"]});
-          google.charts.setOnLoadCallback(drawChart);
-          function drawChart() {
-             var dataTable = new google.visualization.DataTable();
-            dataTable.addColumn('string', 'chemical Class');
-            dataTable.addColumn('number', 'Number of Compounds Analyzed');
-            // A column for custom tooltip content
-            dataTable.addColumn({type: 'string', role: 'tooltip'});
-            dataTable.addRows([
-              ['Brominated Flame Retardants, PCB, PBDE',     24, 'e.g.: Pentabromoethylbenzene, 2-Ethylhexyl 2,3,4,5-tetrabromobenzoate'],
-              ['Chlorinated Dibenzo-p-dioxins and Dibenzofurans',      11, 'e.g.: Dibenzofuran, 2,3,7,8-Tetrachlorodibenzofuran'],
-              ['Polycyclic Aromatic Hydrocarbons',  11,'e.g.: Dibenz[a,h]anthracene, Benzo[ghi]perylene'],
-              ['Organochlorine Pesticides, Insecticides, and their Breakdown Products', 28,'e.g.: Pentachloronitrobenzene, o,p'-DDT, o,p'-DDE, Endrin ketone'],
-              ['Other Pesticides and Pest, Repellents, Including Organophosphate Pesticides',    26, 'e.g.: Alachlor, Deet'],
-              ['Other Environmental Pollutants',    25, 'e.g.: Hexachlorobutadiene, 1,2,3-Trichlorobenzene']
-            ]);
-
-            var options = {
-                title: 'Chemical species in GC-MS/MS analysis (N = 125)',
-                fontSize: 18
-
-            };
-
-            //var options = { legend: 'none' };
-            //var chart = new google.visualization.ColumnChart(document.getElementById('tooltip_action'));
-             var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-             chart.draw(dataTable, options);
-
-            //var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-            //chart.draw(data, options);
-          }
-        </script>
 </head>
 
 <body>
@@ -100,17 +57,25 @@
                         <a href="sidebar-publications.html" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="sidebar-publications.html">Publications</a>
+                                <a href="sidebar-data.html">Autism Exposome Data</a>
                             </li>
                             <li>
-                                <a href="sidebar-data.html">Data</a>
-                            </li>
-                            <li>
-                                <a href="sidebar-tool.html">Tools</a>
+                                <a href="sidebar-tool.html">Third Party Tools</a>
                             </li>
                             </li>
                             <li>
-                                <a href="sidebar-external-projects.html">Other Projects</a>
+                                <a href="sidebar-external-projects.html">Third Party Projects</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="sidebar-publications.html" class="dropdown-toggle" data-toggle="dropdown">Publications<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="sidebar-publications.html">Autism Exposome Project</a>
+                            </li>
+                            <li>
+                                <a href="sidebar-publications-third.html">Other Relevant Publications</a>
                             </li>
                             <li>
                                 <a href="sidebar-link.html">Important Links</a>
@@ -147,24 +112,17 @@
             <!-- Sidebar Column -->
              <div class="col-md-3">
                 <div class="list-group">
-                <a href="sidebar-publications.html" class="list-group-item"><strong>Publications</strong></a>
-                <a href="sidebar-publications.html#autism" class="list-group-item">&bull; Autism </a>
-                <a href="sidebar-publications.html#AE" class="list-group-item">&bull; Autism  &amp; Environmental factors</a>
-                <a href="sidebar-publications.html#Exposomes" class="list-group-item">&bull; Exposome</a>
-                <a href="sidebar-publications.html#Meta" class="list-group-item">&bull; Metabolomics</a>
-                
-                <a href="sidebar-data.html#Data" class="list-group-item"><strong>Data</strong></a>
-                <a href="sidebar-tool.html#Tools" class="list-group-item"><strong>Tools</strong></a>
-                <a href="sidebar-external-projects.html" class="list-group-item"><strong>Other Projects</strong></a>
-                <a href="sidebar-link.html#Links" class="list-group-item"><strong>Important Links</strong></a>
+                <a href="sidebar-data.html" class="list-group-item"><strong>Autism Exposome Data</strong></a>
+                <a href="sidebar-tool.html" class="list-group-item"><strong>Third Party Tools</strong></a>
+                <a href="sidebar-external-projects.html" class="list-group-item"><strong>Third Party Projects</strong></a>
                 </div>
             </div>
 
             <div class="col-md-9">
-                <h2 name="Data">Other Projects</h2>
+                <h2 name="Data">Third Party Projects</h2>
                 <hr>
                 <!--<h3>European Projects</h3>-->
-                <h4><a target="_black" href="http://www.projecthelix.eu"><strong>The Project HELIX</strong></a></h4>
+                <h4><a name="helix" target="_black" href="http://www.projecthelix.eu"><strong>The Project HELIX</strong></a></h4>
                 <p>In six existing prospective birth cohort studies in Europe, HELIX will estimate prenatal and postnatal exposure to a broad range of chemical and physical exposures: persistent and non-persistent organic chemicals, metals, pesticides, environmental tobacco smoke, water contaminants, air pollutants, noise, UV radiation, and contact with green spaces.</p>
                 <p>Exposure models will be developed for the full cohorts totaling 32,000 mother-child pairs and biomarkers will be measured in a subset of 1,200. Nested repeat-sampling panel studies (N=150) will collect data on biomarker variability and use smartphone-linked sensors to assess individual mobility, physical activity and personal exposure to air pollutants and UV radiation.</p>
                 <p>Omics techniques will determine molecular profiles (metabolome, proteome, transcriptome, epigenome) associated with exposures. Statistical methods for multiple and combined exposures will provide exposure-response estimates for fetal and child growth, obesity, neurodevelopment, and respiratory outcomes. 
@@ -180,7 +138,7 @@
                 </ul>
 
 
-                <h4><a target="_blank" href="https://lifecycle-project.eu/"><strong>Life Cycle</strong></a></h4>
+                <h4><a tname="lifecyle" arget="_blank" href="https://lifecycle-project.eu/"><strong>Life Cycle</strong></a></h4>
                 <p>The overarching concept of The LifeCycle Project is innovative research on the role of novel integrated markers of early-life stressors that influence health across the lifecycle using an open and long-term network of European cohorts that started during pregnancy or childhood.</p>
                 <p>Our goal is to establish the EU Child Cohort Network, a Europe-wide network of cohort studies that started in early-life, and translate our findings into policy recommendations for stratified and personalized prevention strategies.</p>
                 <p>LifeCycle’s specific objectives are to:</p>
@@ -195,13 +153,13 @@
                 </ul>
 
 
-                <h4><a target="_blank" href="http://www.exposomicsproject.eu/"><strong>EXPOsOMICS</strong></a></h4>
+                <h4><a name="exposomics" target="_blank" href="http://www.exposomicsproject.eu/"><strong>EXPOsOMICS</strong></a></h4>
                 <p>The project's main aim is to predict individual disease risk related to the environment, by characterizing the external and internal exposome for common exposures (air and drinking water contaminants) during critical periods of life, including in utero. The ultimate goal is to use the new tools in risk assessment and in the estimation of the burden of environmental disease.</p>
                 <p>EXPOsOMICS is looking to develop an increased understanding through developing a personal exposure monitoring (PEM) system. PEM will include sensors, smartphones, geo-referencing, satellites which will collect data on individual external exposome as well as analyze biological samples (internal markers of external exposures) using multiple "omic" technologies.</p>
                 <p>Research into the relationships between external exposures (as measured by PEM, which has not previously been used in large scale studies) and global profiles of molecular features (as measured by omics) in the same individuals constitutes a novel advance towards the development of "next generation exposure assessment" for environmental chemicals and their mixtures.</p>
                 
 
-                <h4><a tarjet="_blank", href="www.heals-eu.eu/"><strong>HEALS</strong></a></h4>
+                <h4><a name="heals" tarjet="_blank", href="www.heals-eu.eu/"><strong>HEALS</strong></a></h4>
                 <p>HEALS represents a comprehensive applied methodology focusing on the different aspects of individual assessment of exposure to conventional and emerging environmental stressors and on the prediction of the associated health outcomes. </p>
                 <p>Key health endpoints considered  include allergic respiratory diseases, bronchial asthma, neurodevelopmental and neurodegenerative disease, obesity, and childhood type II diabetes (T2D). For the first time, HEALS will try to reverse the paradigm of “nature versus nurture” and adopt one defined by complex and dynamic interactions between DNA sequence, epigenetic DNA modifications, gene expression and environmental factors that all combine to influence disease phenotypes.</p>
                 <p>HEALS will start from analysis of data collected in on-going epidemiological EU studies involving mother/infant pairs, children, or adults including the elderly to evidence relevant environmental exposure/health outcome associations. These associations will aid in designing pilot surveys using an integrated approach, where the selection of biomarkers of exposure, effects and individual susceptibility results in integrated risk assessment. In the context of this new paradigm, a relevant contribution for a better understanding of the diseases comes also from twin studies.</p>
