@@ -28,79 +28,9 @@
     <![endif]-->
 
     <!-- publication chart-->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-            ['Year', 'Autism', 'Autism & Genetics', 'Autism & (Exposome+Environment)'],
-            ['1980',121,4,8],
-            ['1981',   113 ,8  ,  9 ], 
-            ['1982', 141 ,12  , 10] ,
-            ['1983 ',  148 ,14  , 11 ] ,
-            ['1984',   178 ,16 ,  12 ] ,
-            ['1985',   179 ,26 ,  13 ], 
-            ['1986',   185 ,29  , 12 ] ,
-            ['1987',   213 ,17  , 9 ] ,
-            ['1988',   241 ,28  , 11 ] ,
-            ['1989',   241 ,32  , 19 ] ,
-            ['1990',   206 ,32  , 36 ] ,
-            ['1991',   234 ,35  , 27 ] ,
-            ['1992',   261 ,35  , 26 ] ,
-            ['1993',   249 ,27  , 16 ] ,
-            ['1994',   264 ,39 ,  15 ] ,
-            ['1995',   230 ,23  , 26 ] ,
-            ['1996',   273, 39  , 13 ] ,
-            ['1997',  287 ,43  , 19 ] ,
-            ['1998',   349 ,60 ,  24 ] ,
-            ['1999',   351 ,65  , 16 ] ,
-            ['2000',   436, 92 ,  26 ] ,
-            ['2001',   574, 116 , 28 ] ,
-            ['2002',   637 ,137 , 41 ] ,
-            ['2003',   642 ,149 , 45 ] ,
-            ['2004',   802 ,173  ,65 ] ,
-            ['2005',   859 ,167 , 69 ] ,
-            ['2006',   1045  ,  228 , 91 ] ,
-            ['2007',   1214 ,   276 , 119 ], 
-            ['2008',   1444  ,  362 , 133 ] ,
-            ['2009',   1596   , 396 , 142 ], 
-            ['2010',   1869  ,  491 , 194 ] ,
-            ['2011',   2126  ,  574 , 190 ] ,
-            ['2012',   2514  ,  612 , 235 ] ,
-            ['2013',   2886 ,   651 , 337 ],
-            ['2014',   3272   , 773 , 357 ],
-            ['2015',   3940   , 661 , 369 ],
-            ['2016',  1086 ,   143 , 75 ]
-           
-
-        ]);
-
-        var options = {
-          title: 'Pubmed results by year based on keywords', titleTextStyle:{fontSize: 22   , bold: true},
-          hAxis: {title: 'Year',  titleTextStyle: { color: '#333'}},
-          vAxis: {minValue: 0}
-        };
-       
-
-        var options_stacked = {
-          isStacked: true,
-          height: 300,
-          legend: {position: 'top', maxLines: 3},
-          vAxis: {minValue: 0}
-          
-        };
-
-        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
-    </script>
-
 </head>
 
 <body>
-
- 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -112,7 +42,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Autism Exposome Project</a>
+                <a class="navbar-brand" href="index.html">Autism Exposome Project</a> 
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -136,13 +66,25 @@
                         <a href="sidebar-publications.html" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="sidebar-publications.html">Publications</a>
+                                <a href="sidebar-data.html">Autism Exposome Data</a>
                             </li>
                             <li>
-                                <a href="sidebar-data.html">Data</a>
+                                <a href="sidebar-tool.html">Third Party Tools</a>
+                            </li>
                             </li>
                             <li>
-                                <a href="sidebar-tool.html">Tools</a>
+                                <a href="sidebar-external-projects.html">Third Party Projects</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="sidebar-publications.html" class="dropdown-toggle" data-toggle="dropdown">Publications<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="sidebar-publications.html">Autism Exposome Project</a>
+                            </li>
+                            <li>
+                                <a href="sidebar-publications-third.html">Other Relevant Publications</a>
                             </li>
                             <li>
                                 <a href="sidebar-link.html">Important Links</a>
@@ -179,148 +121,35 @@
             <!-- Sidebar Column -->
              <div class="col-md-3">
                 <div class="list-group">
-                <a href="sidebar-publications.html" class="list-group-item"><strong>Publications</strong></a>
-                <a href="sidebar-publications.html#autism" class="list-group-item">&bull; Autism </a>
-                <a href="sidebar-publications.html#AE" class="list-group-item">&bull; Autism  &amp; Environmental factors</a>
-                <a href="sidebar-publications.html#Exposomes" class="list-group-item">&bull; Exposome</a>
-                <a href="sidebar-publications.html#Meta" class="list-group-item">&bull; Metabolomics</a>
-                
-                <a href="sidebar-data.html#Data" class="list-group-item"><strong>Data</strong></a>
-                <a href="sidebar-tool.html#Tools" class="list-group-item"><strong>Tools</strong></a>
-                <a href="sidebar-link.html#Links" class="list-group-item"><strong>Important Links</strong></a>
+                <a href="sidebar-publications.html" class="list-group-item"><strong>Autism Exposome Project</strong></a>
+                <a href="sidebar-publications.html#inside" class="list-group-item">&bull; Inside Project Publications</a>
+                <a href="sidebar-publications.html#external" class="list-group-item">&bull; External Project Publications</a>
+                <a href="sidebar-publications-third.html" class="list-group-item"><strong>Other Relevant Publications</strong></a>
+                <a href="sidebar-link.html" class="list-group-item"><strong>Important Links</strong></a>
                 </div>
             </div>
 
             <!-- Content Column -->
             <div class="col-md-9">
-                <h2 >Publications</h2>
-                <hr>
-                <br>
-                <p>Coming soon</p>
-                <br>
-                <br>
-                <br>
+                <h2>Autism Exposome Project</h2>
+                    <h3><a name="inside">Inside Autism Exposome Project Publications</a></h3>
+                    <hr>
+                    <br>
 
-                <h2>Selected references</h2>
-                <hr>
-                   
-                    <div id="chart_div" style="width: 900px; height: 500px;"></div>
-                 <!-- <img src="img/keywords.jpeg"> -->
-                    <!--    <iframe class="my_frame" src="https://autismexposome.shinyapps.io/pubmedTrack/" frameborder="0" width="100%" style="height: 60vh;">
-                    </iframe> -->
-               
-                    <!-- this is to adjust iframe display in different devices-->
-                    <!--<script type="text/javascript" language="javascript"> 
-                    $('.myIframe').css('height', $(window).height()+'px');
-                    </script> -->
-                  
-                <hr>
-
-                <h3><a name="autism">Autism</a></h3>
-             
-                 <ul><strong>Journal Article: </strong>
-                    <li>Geschwind DH, et al. Gene hunting in autism spectrum disorder: on the path to precision medicine. Lancet Neurol. 2015; <a target="_blank" href="http://www.thelancet.com/journals/laneur/article/PIIS1474-4422(15)00044-7/abstract" > Read more</a> </li>
-                    <li>Sahin M, et al. Genes, circuits, and precision therapies for autism and related neurodevelopmental disorders. Science. 2015; <a target="_blank" href="http://science.sciencemag.org/content/350/6263/aab3897" > Read more</a> </li>
-                    <li>Talkowski ME, et al. Autism spectrum disorder genetics: diverse genes with diverse clinical outcomes. Harv Rev Psychiatry. 2014; <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/24614762" > Read more</a> </li>
-                    <li>Gaugler T, et al. Most genetic risk for autism resides with common variation. Nature genetics. 2014; <a target="_blank" href="http://www.nature.com/ng/journal/v46/n8/full/ng.3039.html" > Read more</a> </li>
-                    <li>Taylor B, et al. Prevalence and incidence rates of autism in the UK: time trend from 2004-2010 in children aged 8 years. BMJ open. 2013; <a target="_blank" href="http://bmjopen.bmj.com/content/3/10/e003219.abstract" > Read more</a> </li> 
-                    <li>Campbell MG, et al. Pathway-based outlier method reveals heterogeneous genomic structure of autism in blood transcriptome. BMC medical genomics. 2013; <a target="_blank" href="http://bmcmedgenomics.biomedcentral.com/articles/10.1186/1755-8794-6-34" > Read more</a> </li>
-                    <li>Kong SW, et al. Peripheral blood gene expression signature differentiates children with autism from unaffected siblings. Neurogenetics. 2013; <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/23625158" > Read more</a> </li>
-                    <li>Klei L, et al. Common genetic variants, acting additively, are a major source of risk for autism. Mol Autism. 2012; <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/23067556" > Read more</a> </li>
-                    <li>Kong SW, et al. Characteristics and predictive value of blood transcriptome signature in males with autism spectrum disorders. PloS one. 2012; <a target="_blank" href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049475" > Read more</a> </li>
-                    <li>Hallmayer J, et al. Genetic heritability and shared environmental factors among twin pairs with autism. Archives of general psychiatry. 2011; <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/21727249" > Read more</a> </li>
-                    <li>Hertz-Picciotto I, el al. The rise in autism and the role of age at diagnosis. Epidemiology. 2009; <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/19234401" > Read more</a> </li>
-                </ul>
-                <a href="#top">Go to top!</a> 
-                <br>
-                <hr>
-                <h3><a name="AE">Autism  &amp; Environmental factors</a></h3>
-                <ul><strong>Review: </strong>
-
-                    <li>Mandy W, et al. Annual Research Review: The role of the environment in the developmental psychopathology of autism spectrum condition. Journal of Child Psychology and Psychiatry. 2016; <a href="http://doi.org/10.1111/jcpp.12501">Read more</a> </li>
-                    <li>Ornoy A, et al. Prenatal factors associated with autism spectrum disorder (ASD). Reprod Toxicol. 2015; <a href="https://www.ncbi.nlm.nih.gov/pubmed/26021712" > Read more</a> </li>
-                    <li>Talbott EO, et al. Fine particulate matter and the risk of autism spectrum disorder. Environ Res. 2015; <a href="http://www.sciencedirect.com/science/article/pii/S0013935115001449" > Read more</a> </li> 
-                    <li>Knuesel I, et al. Maternal immune activation and abnormal brain development across CNS disorders. Nat Rev Neurol. 2014; <a href="https://www.ncbi.nlm.nih.gov/pubmed/25311587" > Read more</a> </li>
-                    <li>Lyall K, et al. Maternal lifestyle and environmental risk factors for autism spectrum disorders. Int J Epidemiol. 2014 ; <a href="https://www.ncbi.nlm.nih.gov/pubmed/24518932" > Read more</a> </li>
-                     <li>Kalkbrenner AE, et al. Environmental chemical exposures and autism spectrum disorders: a review of the epidemiological evidence. Curr Probl Pediatr Adolesc Health Care. 2014; <a href=" https://www.ncbi.nlm.nih.gov/pubmed/25199954" > Read more</a> </li>
-                    <li>Roberts AL, et al. Perinatal air pollutant exposures and autism spectrum disorder in the children of Nurses' Health Study II participants. Environmental health perspectives. 2013; <a href="http://ehp.niehs.nih.gov/wp-content/uploads/advpub/2014/12/ehp.1408133.acco.pdf" > Read more</a> </li>
-                    <li>Volk HE, et al. Traffic-related air pollution, particulate matter, and autism. JAMA Psychiatry. 2013; <a href="http://archpsyc.jamanetwork.com/article.aspx?articleid=1393589" > Read more</a> </li>
-                    <li>Bjorklund G. The role of zinc and copper in autism spectrum disorders. Acta Neurobiol Exp (Wars). 2013; <a href="https://www.ncbi.nlm.nih.gov/pubmed/23823984" > Read more</a> </li>
-
-                </ul>
-         
-                 <ul><strong>Journal Article: </strong>
-
-                    <li>Estes ML, et al. Immune mediators in the brain and peripheral tissues in autism spectrum disorder. Nat Rev Neurosci. 2015; <a href=" http://www.ncbi.nlm.nih.gov/pubmed/26189694" > Read more</a> </li>
-                    <li>Shelton JF, et al. Neurodevelopmental Disorders and Prenatal Residential Proximity to Agricultural Pesticides: The CHARGE Study. Environmental health perspectives. 2014; <a target="_blank" href=" http://ehp.niehs.nih.gov/1307044/" > Read more</a> </li>
-                    <li>Grandjean P, et al. Neurobehavioural effects of developmental toxicity. Lancet neurology. 2014; <a target="_blank" href="http://www.thelancet.com/journals/laneur/article/PIIS1474-4422(13)70278-3/abstract" > Read more</a> </li>
-                    <li>Rossignol DA, et al. Environmental toxicants and autism spectrum disorders: a systematic review. Translational psychiatry. 2014; <a target="_blank" href="http://www.nature.com/tp/journal/v4/n2/full/tp20144a.html" > Read more</a> </li>
-                    <li>Knuesel I, et al. Maternal immune activation and abnormal brain development across CNS disorders. Nat Rev Neurol. 2014; <a target="_blank" href="http://www.nature.com/nrneurol/journal/v10/n11/full/nrneurol.2014.187.html" > Read more</a> </li>
-                    <li>Rappaport SM, et al. Epidemiology. Environment and disease risks. Science. 2010; <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/20966241"> Read more</a>                    </li>
-                    <li>Roberts AL, et al. Perinatal air pollutant exposures and autism spectrum disorder in the children of Nurses' Health Study II participants. Environmental health perspectives. 2013; <a target="_blank" href=" http://ehp.niehs.nih.gov/1206187/" > Read more</a> </li>  
-                </ul>
-                <a href="#top">Go to top!</a> 
-                <br>
-                <hr>
-                <h3><a name="Exposomes">Exposome</a></h3>
-               <!--  <ul><strong>Review: </strong>
-                    
-                </ul> -->
-                <ul><strong>Journal Article:</strong>
-                                        
-                    <li>Guxens M, et al. Air Pollution Exposure during Pregnancy and Childhood Autistic Traits in Four European Population-Based Cohort Studies: The ESCAPE Project. Environmental Health Perspect. 2016; <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4710593/"> Read more</a> </li> 
-                    <li>Zamen S, et al. A search for blood biomarkers for autism: Peptoids. Scientific Reports. 2016; <a target="_blank" href="http://www.nature.com/articles/srep19164"> Read more</a> </li>
-                    </li>
-
-                    <li>Jones DP. Sequencing the exposome: A call to action. Toxicol Rep. 2016; <a target="_blank" href="http://www.sciencedirect.com/science/article/pii/S2214750015300871"> Read more</a> </li>
-                    <li> Xu GJ, et al. Comprehensive serological profiling of human populations using a synthetic human virome. Science. 2015; <a href="http://science.sciencemag.org/content/348/6239/aaa0698" > Read more</a> </li>
-                    <li>Rappaport SM, et al. The blood exposome and its role in discovering causes of disease. Environmental health perspectives. 2014; <a target="_blank" href="http://ehp.niehs.nih.gov/1308015/"> Read more</a> </li>
-                    <li>Patel CJ, et al. Studying the elusive environment in large-scale. J Am Med Assoc. 2014;  <a target="_blank" href="http://jama.jamanetwork.com/article.aspx?articleid=1877218"> Read more</a> </li>
-                    <li>Patel CJ, et al. Placing epidemiological results in the context of multiplicity and typical correlations of exposures. Journal of epidemiology and community health. 2014; <a target="_blank" href="http://jech.bmj.com/content/early/2014/06/12/jech-2014-204195"> Read more</a> </li>
-
-                    <li>Patel CJ, et al. Investigation of maternal environmental exposures in association with self-reported preterm birth. Reproductive toxicology. 2014;<a target="_blank" href="http://www.sciencedirect.com/science/article/pii/S0890623813003869"> Read more</a> </li>
-                    
-                    <li>Stafoggia M, et al. Long-term exposure to ambient air pollution and incidence of cerebrovascular events: results from 11 European cohorts within the ESCAPE project. Environmental health perspectives. 2014; <a href="http://ehp.niehs.nih.gov/1307301/" > Read more</a> </li>
-                    <li>Patel CJ, et al. Investigation of maternal environmental exposures in association with self-reported preterm birth. Reprod Toxicol. 2014; <a href="http://www.sciencedirect.com/science/article/pii/S0890623813003869" > Read more</a> </li>
-                     <li>Rappaport SM, et al. The Blood Exposome and Its Role in Discovering Causes of Disease. Environmental health perspectives. 2014; <a href=" http://ehp.niehs.nih.gov/1308015/" > Read more</a> </li>
-                    <li>Wild CP, et al. Measuring the exposome: A powerful basis for evaluating environmental exposures and cancer risk. Environ Mol Mutagen. 2013; <a href=" http://onlinelibrary.wiley.com/doi/10.1002/em.21777/abstract" > Read more</a> </li>
-                    <li>Wild CP. The exposome: from concept to utility. Int J Epidemiol. 2012; <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/22296988"> Read more</a> </li>
-                 
-                    <li>Rappaport SM. Biomarkers intersect with the exposome. Biomarkers. 2012; <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/22672124"> Read more</a> </li>
-                    <li>Johnson JM, et al. A practical approach to detect unique metabolic patterns for personalized medicine. The Analyst. 2010; <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/20838665"> Read more</a> </li>
-                     <li>Patel CJ, et al. An Environment-Wide Association Study (EWAS) on type 2 diabetes mellitus. PloS one. 2010; <a target="_blank" href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0010746"> Read more</a> </li>
-                     <li>Rappaport SM, et al. Epidemiology. Environment and disease risks. Science. 2010; <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/20966241"> Read more</a> </li>
-
-                    <li>Ioannidis J, et al. Researching Genetic Versus Nongenetic Determinants of Disease: A Comparison and Proposed Unification. Sci Transl Med. 2009; <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/20368180"> Read more</a> </li>
-                    <li>Wild CP. Complementing the genome with an "exposome": the outstanding challenge of environmental exposure measurement in molecular epidemiology. Cancer epidemiology, biomarkers &amp; prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology. 2005; <a target="_blank" href="http://cebp.aacrjournals.org/content/14/8/1847.full"> Read more</a> </li>
-                           
-
-                    
-                </ul>
-                <a href="#top">Go to top!</a> 
-                <br>
-                <hr>
-                
-                <h3><a name="Meta">Metabolomics</a></h3>
-                    <ul><strong>Review: </strong>
-                        <li>Jones DP, et al. Nutritional metabolomics: progress in addressing complexity in diet and health. Annual review of nutrition. 2012; <a target="_blank" href="http://www.annualreviews.org/doi/abs/10.1146/annurev-nutr-072610-145159" > Read more</a> </li>
-                         <li>Richardson SD. Environmental mass spectrometry: emerging contaminants and current issues. Anal. Chem. 2004; <a target="_blank" href="http://pubs.acs.org/doi/abs/10.1021/ac060682u" > Read more</a> </li>
+                    <ul>
+                        <li>Coming soon</li>
                     </ul>
+
+                    <br>
+                    <h3><a name="external">External Autism Exposome Project</a></h3>
+                    <hr>
+                    <br>
+                    <ul>
+                        <li><em>Hernandez-Ferrer C., Gonzalez JR</em>; <strong>CTDquerier: A Bioconductor R package for Comparative Toxicogenomics Database (TM) data extraction and visualization in genetic, environmental and toxicological studies</strong>; Bioinformatics (2018); <em>Submitted</em></li>
                     </ul>
-                     
-
-                    <ul><strong>Journal Article:</strong> 
-
-                     <li>Roede JR, et al. Transcriptome–metabolome wide association study (TMWAS) of maneb and paraquat neurotoxicity reveals network level interactions in toxicologic mechanism. Toxicology Reports. 2014; <a target="_blank" href="http://www.sciencedirect.com/science/article/pii/S2214750014000511" > Read more</a> </li>
-                      <li>Soltow QA, et al. High-performance metabolic profiling with dual chromatography-Fourier-transform mass spectrometry (DC-FTMS) for study of the exposome. Metabolomics. 2013; <a target="_blank" href="http://www.nature.com/nprot/journal/v6/n7/full/nprot.2011.335.html" > Read more</a> </li>
-                     <li>Park YH, et al. High-performance metabolic profiling of plasma from seven mammalian species for simultaneous environmental chemical surveillance and bioeffect monitoring. Toxicology. 2012; <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/22387982" > Read more</a> </li>
-                     <li>Dunn WB, et al. Human Serum Metabolome C. Procedures for large-scale metabolic profiling of serum and plasma using gas chromatography and liquid chromatography coupled to mass spectrometry. Nature protocols. 2011; <a target="_blank" href="http://www.nature.com/nprot/journal/v6/n7/abs/nprot.2011.335.html" > Read more</a> </li>                  
-                    <li>Horai H, et al. MassBank: A public repository for sharing mass spectral data for life sciences. J Mass Spectrom. 2010; <a target="_blank" href="https://keio.pure.elsevier.com/en/publications/massbank-a-public-repository-for-sharing-mass-spectral-data-for-l" > Read more</a> </li>
-                     <li>Wishart DS, et al. HMDB: a knowledgebase for the human metabolome. Nucleic acids research. Nucl. Acids Res. 2007; <a target="_blank" href="http://nar.oxfordjournals.org/content/35/suppl_1/D521" > Read more</a> </li>
-                   </ul>
-                   <a href="#top">Go to top!</a>    
+                    <br>
+            </li></ul>
             </div>
-        </div>
         <!-- /.row -->
 
         <hr>
