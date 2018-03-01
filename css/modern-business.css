@@ -38,23 +38,10 @@ header.carousel .carousel-inner {
 
 header.carousel .fill {
     width: 100%;
-    height:100%;
+    height: 100%;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-   /* background: url(images/bg.jpg) no-repeat center center fixed; */
 }
-
-header.carousel .fillsvg {
-    width: 100%;
-    height:100%;
-    background-position: center;
-    background-size: 100% 70%;
-    background-repeat: no-repeat;
-   /* background: url(images/bg.jpg) no-repeat center center fixed; */
-}
-
-
 /*This is to remove the navigation dot/ pagination button */
 .carousel-indicators li { visibility: hidden; }
 

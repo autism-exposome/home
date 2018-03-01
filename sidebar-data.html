@@ -27,7 +27,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-        <!-- this is to plot the pie chart (source is from goolge developmers -->
+        <!-- this is to plot the pie chart (source is from goolge developmers-->
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript">
           google.charts.load("current", {packages:["corechart"]});
@@ -39,16 +39,15 @@
             // A column for custom tooltip content
             dataTable.addColumn({type: 'string', role: 'tooltip'});
             dataTable.addRows([
-              ['Brominated Flame Retardants, PCB, PBDE',     24, 'e.g.: Pentabromoethylbenzene, 2-Ethylhexyl 2,3,4,5-tetrabromobenzoate'],
-              ['Chlorinated Dibenzo-p-dioxins and Dibenzofurans',      11, 'e.g.: Dibenzofuran, 2,3,7,8-Tetrachlorodibenzofuran'],
-              ['Polycyclic Aromatic Hydrocarbons',  11,'e.g.: Dibenz[a,h]anthracene, Benzo[ghi]perylene'],
-              ['Organochlorine Pesticides, Insecticides, and their Breakdown Products', 28,'e.g.: Pentachloronitrobenzene, o,p'-DDT, o,p'-DDE, Endrin ketone'],
-              ['Other Pesticides and Pest, Repellents, Including Organophosphate Pesticides',    26, 'e.g.: Alachlor, Deet'],
-              ['Other Environmental Pollutants',    25, 'e.g.: Hexachlorobutadiene, 1,2,3-Trichlorobenzene']
+              ['Brominated Flame Retardants',     40, 'e.g.: Polybrominated diphenyl ethers, pentabromoethylbenzene'],
+              ['Chlorinated and Chlorinated Phosphate Ester Flame Retardants',      20, 'e.g.: Polychlorinated biphenyls, dechlorane plus, TCEP, TCPP'],
+              ['Organochlorine Pesticides',  20,'e.g.: Heptachlor, Aldrin, Endrin, DDT'],
+              ['Pesticide Breakdown Products', 5,'e.g.: DDE, heptachlor epoxide'],
+              ['Polycylic Aromatic Hydrocarbons',    15, 'e.g.: Naphthalene, benzo[a]pyrene']
             ]);
 
             var options = {
-                title: 'Chemical species in GC-MS/MS analysis (N = 125)',
+                title: 'Chemical species in GC-MS/MS analysis (N = 100)',
                 fontSize: 18
 
             };
@@ -62,9 +61,15 @@
             //chart.draw(data, options);
           }
         </script>
+
+          
+
+
 </head>
 
 <body>
+
+ 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -76,7 +81,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Autism Exposome Project</a> 
+                <a class="navbar-brand" href="index.html">Autism Exposome Project</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -100,25 +105,13 @@
                         <a href="sidebar-publications.html" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="sidebar-data.html">Autism Exposome Data</a>
+                                <a href="sidebar-publications.html">Publications</a>
                             </li>
                             <li>
-                                <a href="sidebar-tool.html">Third Party Tools</a>
-                            </li>
-                            </li>
-                            <li>
-                                <a href="sidebar-external-projects.html">Third Party Projects</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="sidebar-publications.html" class="dropdown-toggle" data-toggle="dropdown">Publications<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="sidebar-publications.html">Autism Exposome Project</a>
+                                <a href="sidebar-data.html">Data</a>
                             </li>
                             <li>
-                                <a href="sidebar-publications-third.html">Other Relevant Publications</a>
+                                <a href="sidebar-tool.html">Tools</a>
                             </li>
                             <li>
                                 <a href="sidebar-link.html">Important Links</a>
@@ -155,9 +148,15 @@
             <!-- Sidebar Column -->
              <div class="col-md-3">
                 <div class="list-group">
-                <a href="sidebar-data.html" class="list-group-item"><strong>Autism Exposome Data</strong></a>
-                <a href="sidebar-tool.html" class="list-group-item"><strong>Third Party Tools</strong></a>
-                <a href="sidebar-external-projects.html" class="list-group-item"><strong>Third Party Projects</strong></a>
+                <a href="sidebar-publications.html" class="list-group-item"><strong>Publications</strong></a>
+                <a href="sidebar-publications.html#autism" class="list-group-item">&bull; Autism </a>
+                <a href="sidebar-publications.html#AE" class="list-group-item">&bull; Autism  &amp; Environmental factors</a>
+                <a href="sidebar-publications.html#Exposomes" class="list-group-item">&bull; Exposome</a>
+                <a href="sidebar-publications.html#Meta" class="list-group-item">&bull; Metabolomics</a>
+                
+                <a href="sidebar-data.html#Data" class="list-group-item"><strong>Data</strong></a>
+                <a href="sidebar-tool.html#Tools" class="list-group-item"><strong>Tools</strong></a>
+                <a href="sidebar-link.html#Links" class="list-group-item"><strong>Important Links</strong></a>
                 </div>
             </div>
 
@@ -165,52 +164,17 @@
                 <h2 name="Data">Data</h2>
                 <hr>
                 <h4>LC-HRMS</h4>
-                 <p>We detected 16,973 m/z (mass-to-charge ratio) features in plasma samples obtained from our discovery cohort. A list of significant chemicals assoicated with ASD is coming soon! </p>
+                 <p>We typically detect 15,000 to 20,000 different chemical signals in blood samples obtained from humans in the United States. A list of detected chemicals is coming soon! </p>
                  <br>
                  <br>
                 <h4>GC-MS/MS</h4>
-                <p>Currently, 83 of 153 environmental chemicals were quantitatively measured using GC-MS/MS in 67 individuals. </p>
-                <!-- <div id="piechart" style="width: 900px; height: 500px;"></div> -->
+                <p>We measured 31 of the original proposed chemicals, along with an additional about 70 chemicals for a total of 100 chemicals quantified.  </p>
+                <div id="piechart" style="width: 900px; height: 500px;"></div>
                  <br>
               
-                <h4>List of 83 detected environmental chemicals using GC-MS/MS.</h4>            
-                <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th>Type</th>
-                        <th>Detected with good quality</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Brominated Flame Retardants, PCB's, PBDE's</td>
-                        <td>Pentabromoethylbenzene, 2-Ethylhexyl 2,3,4,5-tetrabromobenzoate,PCB's 18, 28, 31, 52, 101, 118, 138, 153, 170, 180, 194, 209, and PBDE's 3, 28, 47, 99, 100, 153, 154, 183</td>
-                    </tr>
-                    <tr>
-                        <td>Chlorinated Dibenzo-p-dioxins and Dibenzofurans</td>
-                        <td>Dibenzofuran, 2,3,7,8-Tetrachlorodibenzofuran,1,2,3,7,8-Pentachlorodibenzofuran, 1,2,3,4,7,8-Hexachlorodibenzofuran,1,2,3,4,6,7,8-Heptachlorodibenzofuran, Octachlorodibenzofuran,1,2,3,4,7,8-Hexachlorodibenzo-p-dioxin, Octachlorodibenzo-p-dioxin</td>
-                    </tr>
-                    <tr>    
-                        <td>Polycyclic Aromatic Hydrocarbons</td>
-                        <td>Dibenz[a,h]anthracene, Benzo[ghi]perylene, Fluoranthene, 7,12-Dimethylbenz[a]anthracene, Benzo(a)pyrene, 3-Methylcholanthrene, Chrysene, Pyrene</td>
-                    </tr>
-                    <tr>
-                        <td>Organochlorine Pesticides, Insecticides, and their Breakdown Products</td>
-                        <td>Pentachloronitrobenzene, o,p'-DDT, o,p'-DDE, Endrin ketone,Heptachlor epoxide (Isomer B), p,p'-DDE, Hexachlorobenzene,a-Chlordane, Trans-nonachlor, b-BHC, g-BHC, Heptachlor, Mirex,Methoxychlor, p,p'-DDT, g-Chlordane, 1,4-Dichlorobenzene,1,2-Dichlorobenzene, 2-Chlorophenol, 2,4,6-Trichlorophenol</td>
-                    </tr>
-                    <tr>     
-                        <td>Other Pesticides and Pest Repellents, Including Organophosphate Pesticides</td>
-                        <td>Alachlor, Deet, Dimethyl Phthalate, Methyl Parathion, Methidathion,Cyanazine</td>
-                    </tr>
-                    <tr> 
-                        <td>Other Environmental Pollutants</td>                                           
-                        <td>bis(2-Chloroethoxy)methane, bis(2-Chloroethyl)ether,Hexachlorobutadiene, 1,2,3-Trichlorobenzene,4-Dimethylaminoazobenzene, 1,3-Dichlorobenzene,Pentachlorobenzene, Isosafrole, Hexachloropropene,2-Chloronaphthalene, 1,2,4,5-Tetrachlorobenzene,N-Nitrosodi-n-propylamine, Nitrobenzene, 4-Chlorophenyl phenyl ether,4-Chloroaniline, 2-Nitrophenol, 5-Nitro-o-toluidine,N-Nitrosodi-n-butylamine, Hexachloroethane, 1,2,4-Trichlorobenzene</td>
-                    </tr>
-                </tbody>
-                </table>     
+                 
             </div>
-
-                       
+            
             <!-- Marketing Icons Section -->
             <!-- <div class="col-md-4">
                 <div class="panel panel-default">
