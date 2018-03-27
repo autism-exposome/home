@@ -72,15 +72,15 @@
         /*Example message arrays for the two demo scrollers*/
 
         var pausecontent=new Array()
-        pausecontent[0]='<i class="fa fa-users"></i><a target="_blank" href="http://metabolomics2016.org/">Metabolomics 2016</a><br />June 27-30, 2016<br />Dublin, Ireland'
-        pausecontent[1]='<i class="fa fa-users"></i><a target="_blank" href="http://www.isee2016roma.org/welcome/">ISEE 2016</a> <br />September 1-4, 2016<br />Rome, Italy'
-        pausecontent[2]='<i class="fa fa-users"></i><a target="_blank" href="http://metabolomics.ucdavis.edu/courses-and-seminars/courses"> Hands-on LC-MS Data processing and Statistics 2016 </a><br /> Mar. 28- Apr. 1, 2016 <br /> AUC Davis, CA Alumni Center, USA'
-        pausecontent[3]='<i class="fa fa-users"></i><a target="_blank" href="https://umichumhs.ut1.qualtrics.com/SE/?SID=SV_bPEVDn7I5wSEcwl"> Metabolomics Summer Workshop</a><br />May 9-12, 2016<br />Ann Arbor, MI, USA'
+        pausecontent[0]='<i class="fa fa-exclamation-triangle"></i><a target="_blank" href="http://35.229.24.3:3838/chernandez/chemicalExplorer/">Chemical Explorer</a> was released!'
+        pausecontent[1]='<i class="fa fa-users"></i><a target="_blank" href="http://isesisee2018.org/">The ISES-ISEE 2018 Joint Annual Meeting</a> <br />August 26 - August 30, 2018<br />Otawa, Canada'
+        pausecontent[2]='<i class="fa fa-users"></i><a target="_blank" href="http://www.faseb.org/src/micro/Site/Folic/Home.aspx">Folic Acid, Vitamin B12 and One-Carbon Metabolism</a><br />July 29 - August 3, 2018<br />Halifax, Canada'
+        pausecontent[3]='<i class="fa fa-users"></i><a target="_blank" href="file:///Users/carleshf/Projects/AutismExposome-website/www.iccbes.org">2018 International Congress on Chemical, Biological and Environmental Sciences (ICCBES 2018)</a><br />May 1 - May 4, 2018<br />Sapporo, Japan'
         pausecontent[4]='<i class="fa fa-users"></i><a target="_blank" href="http://emoryhercules.com/news/hercules-host-exposome-course-june-2016/"> Emory Exposome Summer Course </a> <br />June 12-17, 2016<br />Emory’s campus, GA, USA'
-        pausecontent[5]='<i class="fa fa-users"></i><a target="_blank" href="http://www.uab.edu/proteomics/metabolomics/workshop/workshop_july_2016.php"> 4th Annual Workshop on Metabolomics </a><br />July 17-21, 2016<br />Birmingham, AL, USA'
-        pausecontent[6]='<i class="fa fa-newspaper-o"></i><a target="_blank" href="http://tools.niehs.nih.gov/conference/exposome_webinar/index.cfm"> NIEHS Exposure Science and the Exposome Webinar Series </a><br />July 17-21, 2016<br />Birmingham, AL, USA'
-        pausecontent[7]='<i class="fa fa-users"></i><a target="_blank" href="http://www.cehs.hokudai.ac.jp/ISEE-AC2016/">ISEE- ISES AC2016 </a><br />June 26-29, 2016<br />Sapporo, Japan'
-        pausecontent[8]='<i class="fa fa-users"></i><a target="_blank" href="http://ises2016.org/">ISES 2016 </a><br />October 9-13, 2016<br />Utrecht, Holland'
+        pausecontent[5]='<i class="fa fa-users"></i><a target="_blank" href="file:///Users/carleshf/Projects/AutismExposome-website/www.engii.org/conference/EPPH2018/">The 10th International Conference on Environmental Pollution and Public Health (EPPH 2018)</a><br />March 23 - March 25, 2018<br />Guilin, China'
+        // pausecontent[6]='<i class="fa fa-newspaper-o"></i><a target="_blank" href="http://tools.niehs.nih.gov/conference/exposome_webinar/index.cfm"> NIEHS Exposure Science and the Exposome Webinar Series </a><br />July 17-21, 2016<br />Birmingham, AL, USA'
+        // pausecontent[7]='<i class="fa fa-users"></i><a target="_blank" href="http://www.cehs.hokudai.ac.jp/ISEE-AC2016/">ISEE- ISES AC2016 </a><br />June 26-29, 2016<br />Sapporo, Japan'
+        // pausecontent[8]='<i class="fa fa-users"></i><a target="_blank" href="http://ises2016.org/">ISES 2016 </a><br />October 9-13, 2016<br />Utrecht, Holland'
         /*var pausecontent2=new Array()
         pausecontent2[0]='<a href="http://www.news.com">News.com: Technology and business reports</a>'
         pausecontent2[1]='<a href="http://www.cnn.com">CNN: Headline and breaking news 24/7</a>'
@@ -382,14 +382,15 @@
                 <div class="col-lg-4" > 
                 <!-- Side Widget Well -->
                    <div class="well well-lg">
+                        <h4><i class="fa fa-exclamation-triangle"></i> <a href="http://35.229.24.3:3838/chernandez/chemicalExplorer/">Chemical Explorer</a></h4>
+                        <p>AutismExposome project developed a web application to explore GC-MS and LC-HRMS data for 93 samples including controls, cases, mothers (case-related) and fathers (case-related).</p>
+                        <p>Visit <a href="http://35.229.24.3:3838/chernandez/chemicalExplorer/", target="_blank">Chemical Explorer</a>!</p>
+                        
                         <h4><a href="news.html">News</a></h4>
                         <!-- This part is for display the dynamic scroller-->
-                       <script type="text/javascript">
-
+                        <script type="text/javascript">
                             //new pausescroller(name_of_message_array, CSS_ID, CSS_classname, pause_in_miliseconds)
-
                             new pausescroller(pausecontent, "pscroller1", "someclass", 4000)
-
                            //new pausescroller(pausecontent2, "pscroller2", "someclass", 2000) 
                         </script>
                          <hr>
